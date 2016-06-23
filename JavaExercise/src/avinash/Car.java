@@ -12,6 +12,7 @@ public class Car {
 	public void displayMaximumSpeedandGears(){
 		System.out.println("Max speed is  "+ Speed);
 		System.out.println("Max Gears is  "+ Gears);
+		System.out.println("Max speed");
 	}
 }
 
