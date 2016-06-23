@@ -1,6 +1,6 @@
 package avinash;
 
-import accessSpeciferBasePackage.AccessSpecifeBase;
+import accessSpeciferBasePackageAvinash.AccessSpecifeBase;
 
 public class AccessSpeciferChild extends AccessSpecifeBase {
 
