@@ -8,6 +8,7 @@ public class AccessSpecifierBase {
 		System.out.println("Addition is: "+(a+b));
 	}
 	
+	//Added comment
 	
 // using private	
 	private void mult(int a,int b)
