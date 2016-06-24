@@ -6,7 +6,7 @@ public class AccessSpeciferBase {
 		System.out.println("This is testPublic");
 		
 	}
-
+// test comment 
 	
 	private void testPrivate()
 	{
