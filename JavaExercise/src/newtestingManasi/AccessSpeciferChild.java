@@ -1,6 +1,6 @@
-package newtesting;
+package newtestingManasi;
 
-import testing.AccessSpeciferBase;
+import testingManasi.AccessSpeciferBase;
 
 public class AccessSpeciferChild extends AccessSpeciferBase 
 {
