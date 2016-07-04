@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class LoginPagePom {
 	
 	WebDriver driver;
+	
 
 	public LoginPagePom(WebDriver driver){
 		this.driver=driver;

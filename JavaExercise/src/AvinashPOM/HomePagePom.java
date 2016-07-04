@@ -15,9 +15,10 @@ public class HomePagePom {
 	String name=driver.findElement(By.xpath(".//*[@id='u_0_2']/div[1]/div[1]/div/a/span")).getText();
 	return name;		
 	}
-	public void loggedout() throws InterruptedException{
+	public LoginPagePom loggedout() throws InterruptedException{
 		driver.findElement(By.id("pageLoginAnchor")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id='BLUE_BAR_ID_DO_NOT_USE']/div/div/div[1]/div/div/ul/li[12]/a/span/span")).click();;
+		driver.findElement(By.xpath("//*[@id='BLUE_BAR_ID_DO_NOT_USE']/div/div/div[1]/div/div/ul/li[12]/a/span/span")).click();
+		return (new LoginPagePom(driver));
 	}
 }

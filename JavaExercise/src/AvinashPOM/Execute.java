@@ -15,7 +15,7 @@ public class Execute {
 		home =login.clickLogin();
 		String name =home.checkLoggin();
 		System.out.println("Current logged in with  "+name);
-		home.loggedout();
+		login=home.loggedout();
 	}
 
 }
