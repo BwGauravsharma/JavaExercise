@@ -1,4 +1,4 @@
-package accessSpeciferBasePackageAvinash;
+package avinashpkg2;
 
 public class AccessSpecifeBase {
 
