@@ -1,6 +1,8 @@
 package aashay_asg2_2;
 
-public class axis_bank {
+import java.util.Scanner;
+
+public class axis_bank implements bank_atm_interface {
 	
 	String account_type;
 	int amount;
@@ -43,5 +45,60 @@ public class axis_bank {
 		}
 	}
 
-	
+	public static void main(String args[])
+	{
+		int amt;
+		Scanner s = new Scanner(System.in);
+		axis_bank ax = new axis_bank();
+		
+		System.out.println("Enter you choice: \n Press 1 for Withdrawl\n Press 2 for Accoount statement");
+		int o = s.nextInt();
+		
+		//-----------Withdrawl amount from Axis Bank-------------------
+		if(o == 1 )
+		{
+			System.out.println("Enter you choice: \n Press 1 for Saving account\n Press 2 for Current");
+			int p = s.nextInt();
+			if(p == 1)
+			{
+				System.out.println("Enter the amount in Rupees/-");
+				amt = s.nextInt();
+				ax.withdrawFromAccount(amt, "Saving");
+			}
+			else if(p == 2)
+			{
+				
+				System.out.println("Enter the amount in Rupees/-");
+				amt = s.nextInt();
+				ax.withdrawFromAccount(amt, "Current");
+			}
+			else
+			{
+				System.out.println("You have entered incorrect option");
+			}
+		}
+		//-----------Account statement from Axis Bank-------------------
+		else if(o == 2)
+		{
+			System.out.println("Enter you choice: \n Press 1 for Saving Account Statement \n Press 2 for Current Account Statement");
+			int q = s.nextInt();
+			if(q == 1)
+			{
+				ax.displayStatement("Saving");
+			}	
+			else if(q == 2)
+			{
+				ax.displayStatement("Current");
+			}
+			else
+			{
+				System.out.println("You have entered incorrect option");
+			}
+		}
+		else
+		{
+			System.out.println("You have entered incorrect option");
+		}
+		s.close();
+	}
 }
