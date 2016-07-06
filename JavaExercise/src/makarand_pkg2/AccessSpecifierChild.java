@@ -4,6 +4,12 @@ import makarand_pkg1.AccessSpecifierBase;
 
 public class AccessSpecifierChild extends AccessSpecifierBase {
 	
+  // protected method is overridden here. 
+	
+	public void subtract(int a, int b)
+	{
+		System.out.println("subtraction is: "+(a-b));
+	}
 	
 	public static void main(String arg[])
 	{
