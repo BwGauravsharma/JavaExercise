@@ -27,7 +27,10 @@ public class FacebookTestExecution {
 	
 	public static void TestLogin(){
 		// This method is used for test execution
+<<<<<<< HEAD
 		//test 2
+=======
+>>>>>>> branch 'master' of https://github.com/BwGauravsharma/JavaExercise.git
 		
 		// Test 1
 
