@@ -15,8 +15,9 @@ public class LoginPagePOM {
 		driver.findElement(By.id("pass")).sendKeys(pwd);
 	}
 	
-	public void ClickLoginButton(){
+	public HomePagePOM ClickLoginButton(){
 		driver.findElement(By.id("u_0_m")).click();
+		return new HomePagePOM(driver);
 	}
 
 }
