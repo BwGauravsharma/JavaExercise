@@ -51,7 +51,7 @@ public class sbi_bank implements bank_atm_interface {
 		}
 		else if(account_type=="Corporate")
 		{
-			System.out.println("Your Corporate account statement is sent to your registered email account ");
+			System.out.println("Your Current account statement is sent to your registered email account ");
 		}
 	}
 	
