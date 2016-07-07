@@ -52,6 +52,8 @@
 	<classpathentry kind="lib" path="C:/Aashay/Selenium/selenium-2.48.0/libs/xalan-2.7.2.jar"/>
 	<classpathentry kind="lib" path="C:/Aashay/Selenium/selenium-2.48.0/libs/xercesImpl-2.11.0.jar"/>
 	<classpathentry kind="lib" path="C:/Aashay/Selenium/selenium-2.48.0/libs/xml-apis-1.4.01.jar"/>
+	
 	<classpathentry kind="lib" path="C:/Aashay/Selenium/selenium-2.48.0/selenium-java-2.48.0.jar"/>
+		<classpathentry kind="lib" path="C:/Aashay/Selenium/selenium-2.48.0/selenium-java-2.48.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
