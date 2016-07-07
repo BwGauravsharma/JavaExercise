@@ -2,12 +2,9 @@ package makarand_pkg1;
 
 public class Audi extends Car {
 	
-	public Audi(int max_speed, int max_gears, String make, String model)
+	public Audi(int speed, int gears, String car_make, String car_model)
 	{
-		this.max_gears=max_gears;
-		this.max_speed=max_speed;
-		this.make=make;
-		this.model=model;
+		super(speed, gears, car_make, car_model);
 				
 	}
 
