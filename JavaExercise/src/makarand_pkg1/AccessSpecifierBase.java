@@ -24,9 +24,7 @@ public class AccessSpecifierBase {
 	
 // using protected	
 	protected void subtract(int a,int b)
-	{		
-		System.out.println("subtraction is: "+(a-b));	
-	}
+	{	}
 	
 // main method
 	
