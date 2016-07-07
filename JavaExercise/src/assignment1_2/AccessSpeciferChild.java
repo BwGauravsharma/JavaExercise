@@ -1,6 +1,7 @@
 package assignment1_2;
 
-import assignment1.AccessSpeciferBase;
+
+import assignment1_2.AccessSpeciferBase;
 
 public class AccessSpeciferChild extends AccessSpeciferBase {
 	
@@ -9,7 +10,8 @@ public class AccessSpeciferChild extends AccessSpeciferBase {
 		AccessSpeciferChild c1 = new AccessSpeciferChild();
 		c1.addition(5,9);
 		
-		/*AccessSpeciferChild c2 = new AccessSpeciferChild();
+		/*
+		AccessSpeciferChild c2 = new AccessSpeciferChild();
 		c2.multiplication(6,7);
 		Private class cannot be accessed out side, hence commented
 		*/
