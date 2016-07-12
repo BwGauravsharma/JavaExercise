@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class testSelenium {
 
@@ -15,10 +16,15 @@ public class testSelenium {
 //		WebDriver driver = new FirefoxDriver();
 //		driver.get("http://www.google.com");
 //		driver.manage().window().maximize();
-		 String path = "C:\\eclipse_1\\chrome\\";
-		 System.setProperty("webdriver.chrome.driver", path+"chromedriver.exe");
+		// String path = "C:\\eclipse_1\\chrome\\";
+		 //System.setProperty("webdriver.chrome.driver", path+"chromedriver.exe");
+		
+		
+		
+		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+		capabilities.setCapability("marionette", true);
+		WebDriver driver = new FirefoxDriver();
 		 
-		 WebDriver driver = new ChromeDriver();
 		 driver.get("http://www.google.com");
 		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		 driver.manage().window().maximize();
@@ -30,6 +36,7 @@ public class testSelenium {
 		 searchBox.sendKeys("Selenium as a fun ");
 		 
 	  driver.findElement(By.name("btnG")).click();
+	
 	}
 
 }

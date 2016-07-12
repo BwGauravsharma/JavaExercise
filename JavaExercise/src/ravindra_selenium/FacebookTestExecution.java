@@ -18,10 +18,11 @@ public class FacebookTestExecution {
 		 driver.get("http://www.facebook.com");
 		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		 driver.manage().window().maximize();
-		 
+		
 		 LoginPagePOM  login = new LoginPagePOM(driver);
-		 login.addCredentials("guri10febf@gmail.com", "tribune1");
-		 home = login.ClickLoginButton();
+		 home = login.verifylogin("guri10febf@gmail.com", "tribune1");
+		 
+		 
 		 String HomeLabel = home.getHomeLabel();
 		 if(HomeLabel.equals("Home0")){
 			 System.out.println("Test case Passed");
@@ -34,4 +35,4 @@ public class FacebookTestExecution {
 
 	}
 	
-}
+	}
