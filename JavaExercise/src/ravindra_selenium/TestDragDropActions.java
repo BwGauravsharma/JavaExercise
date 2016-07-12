@@ -25,7 +25,7 @@ public class TestDragDropActions {
 		
 		try{
 		Actions action = new Actions(driver);
-		action.dragAndDrop(source1, target).perform();
+		action.dragAndDrop(source1, target).perform(); 
 		Thread.sleep(200);
 		action.dragAndDrop(source2, target).build().perform();
 		Thread.sleep(200);
