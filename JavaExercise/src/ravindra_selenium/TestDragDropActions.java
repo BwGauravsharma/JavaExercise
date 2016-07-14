@@ -35,6 +35,8 @@ public class TestDragDropActions {
 		Thread.sleep(200);
 		action.dragAndDrop(source5, target).build().perform();
 		
+		
+		
 		}catch(Exception e){}
 		
 
