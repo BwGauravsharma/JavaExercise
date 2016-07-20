@@ -8,32 +8,34 @@ import org.openqa.selenium.WebElement;
 
 public class OfferListingPom {
 	WebDriver driver;
-	List<WebElement> offers = driver.findElements(By.xpath("//table/thead/tr/th/h3"));
-	String offerName;
+	
 
 	public OfferListingPom(WebDriver driver) {
 		this.driver = driver;
 	}
 
 	public boolean OfferListing() {
+		List<WebElement> offers = driver.findElements(By.xpath("//table/thead/tr/th/h3"));
+		String offerName;
 		boolean flag = false;
 		for (WebElement offer : offers) {
 			offerName = offer.getText();
-			if (offerName.equalsIgnoreCase("free")) {
+			
+			if (offerName.equalsIgnoreCase("7-DAY FREE TRIAL")) {
 				System.out.println("free offer displayed");
 				flag=true;
-			} else if (offerName.equalsIgnoreCase("Standard")) {
+			} else if (offerName.equalsIgnoreCase("STANDARD")) {
 				System.out.println("Standard offer displayed");
 				flag=true;
-			} else if (offerName.equalsIgnoreCase("Deluxe")) {
+			} else if (offerName.equalsIgnoreCase("DELUXE")) {
 				System.out.println("Deluxe offer displayed");
 				flag=true;
-			} else if (offerName.equalsIgnoreCase("MLS Enhanced")) {
+			} else if (offerName.equalsIgnoreCase("MLSENHANCED")) {
 				System.out.println("MLS Enhanced offer displayed");
 				flag=true;
 			} else {
 				System.out.println("Invalid offer displayed");
-				break;
+				return false;
 
 			}
 		}
