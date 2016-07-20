@@ -9,6 +9,10 @@ import org.testng.annotations.Test;
 
 public class Execution {
 	private WebDriver driver;
+	private HomePagePom ho;
+	private PropertySearchPom propertyserch;
+	private ZipCodePage zp;
+	private OfferListingPom off;
 	
 	@BeforeTest
 	public void ConfigBrowser(){
@@ -22,8 +26,8 @@ public class Execution {
 	@Test
 	public void CheckpropertyListing(){
 		boolean propertylisting;
-		HomePagePom ho = new HomePagePom(driver);
-		PropertySearchPom propertyserch=ho.SearchProperty();
+		ho = new HomePagePom(driver);
+		propertyserch=ho.SearchProperty();
 		propertylisting=propertyserch.checkListing();
 		Assert.assertTrue(propertylisting);
 		System.out.println("property listed properly");
@@ -32,9 +36,9 @@ public class Execution {
 	@Test
 	public void CheckofferListing() throws InterruptedException{
 		boolean offerlisting=false;
-		HomePagePom ho = new HomePagePom(driver);
-		ZipCodePage zp=ho.NavigateToListingPackagePage();
-		OfferListingPom off=zp.EnterZipCodeInPackageAvilablePopUp();
+		ho = new HomePagePom(driver);
+		zp=ho.NavigateToListingPackagePage();
+		off=zp.EnterZipCodeInPackageAvilablePopUp();
 		offerlisting=off.OfferListing();	
 		Assert.assertTrue(offerlisting);
 		System.out.println("offers listed properly");
